@@ -1,0 +1,80 @@
+body{
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    /* padding:15px; */
+    overflow: hidden;
+}
+
+/* a title post*/
+.title{
+    display: flex;
+    border-bottom: 2px solid;
+    width:100%;
+    margin-left: 15px;
+}
+
+.title>h3{
+    font-family: 'Dosis', sans-serif;
+    padding: 5px 10px;
+    margin: 0;
+    color: white;
+    background-color: black;
+    float:left;
+}
+
+.news-link{
+    text-decoration: none;
+    color: black;
+}
+
+.story{
+    width:100%;
+    padding: 10px 15px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.story_thumb{
+    float:left;
+    width: 300px;
+    height: 150px;
+}
+
+.post{
+    margin-left: 15px;
+}
+
+.post-title{
+    margin:0;
+}
+.post-title>a{
+    text-decoration: none;
+    color: black;
+}
+
+.story:hover{
+    background-color: rgba(0,0,0,0.12);
+}
+
+.story:hover .post-title{
+    color: #8bc34a;
+}
+
+.post_meta{
+}
+
+.post-author{
+    color: #999;
+}
+
+.post-date{
+    color: #999;
+}
+
+.post-snippet{
+    font-size: 25px;
+}
