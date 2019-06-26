@@ -15,108 +15,30 @@
         <div class="title">
             <h3>Recent Posts</h3>
         </div>
+        <% articles.forEach(function(article){ %>
         <a class="news-link" target="_blank"
             href="http://danviet.vn/dien-thoai/samsung-muon-apple-boi-thuong-vi-doanh-so-iphone-thap-990826.html">
             <div class="story">
                 <img class="story_thumb"
-                    src="https://photo-3-baomoi.zadn.vn/w700_r16x9_sm/2019_06_25_149_31217708/03fdacb5d0f539ab60e4.jpg"
+                    src="<%=article.thumb%>"
                     alt="">
                 <div class="post">
                     <h2 class="post-title">
-                        Samsung muốn Apple bồi thường vì… doanh số iPhone thấp
+                        <%=article.title%>
                     </h2>
                     <div class="post_meta">
-                        <span class="post-author">Dân Việt </span>-
+                            <%=article.thumb%>
                         <span class="post-date">
-                            5 hour
+                            <%=article.publish.date%> - <%=article.publish.time%>
                         </span>
                         <p class="post-snippet">
-                            Nguyên nhân là vì Samsung đang là nhà cung cấp linh kiện cho iPhone, bằng nhiều thỏa thuận
-                            với
-                            Apple
-                            giúp hãng thu về một khoản tiền không nhỏ...
+                            <%=article.summary%>
                         </p>
                     </div>
                 </div>
             </div>
         </a>
-
-        <a class="news-link" target="_blank"
-            href="https://news.zing.vn/doi-bom-tan-van-hau-o-ky-chuyen-nhuong-giua-mua-vleague-post959926.html">
-            <div class="story">
-                <img class="story_thumb"
-                    src="https://znews-photo.zadn.vn/w480/Uploaded/neg_yrznslt/2019_06_25/Doan_Van_Hau_Ha_Noi.jpg"
-                    alt="">
-                <div class="post">
-                    <h2 class="post-title">
-                        Đợi 'bom tấn' Văn Hậu ở kỳ chuyển nhượng giữa mùa V.League
-                    </h2>
-                    <div class="post_meta">
-                        <span class="post-author">Zing </span>-
-                        <span class="post-date">
-                            10 hour
-                        </span>
-                        <p class="post-snippet">
-                            <span>
-                                Kỳ chuyển nhượng giữa mùa giải V.League 2019 được kỳ vọng sẽ mang lại những thay đổi
-                                nhân sự có tính bước ngoặt ở các đội bóng...
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a class="news-link" target="_blank"
-            href="https://news.zing.vn/google-chrome-dang-tro-thanh-phan-mem-gian-diep-dang-so-nhat-post959935.html">
-            <div class="story">
-                <img class="story_thumb"
-                    src="https://znews-photo.zadn.vn/w660/Uploaded/chuaplu/2019_06_25/shutterstock_1197263077900x506.jpg"
-                    alt="">
-                <div class="post">
-                    <h2 class="post-title">
-                        Google Chrome đang trở thành phần mềm gián điệp đáng sợ nhất
-                    </h2>
-                    <div class="post_meta">
-                        <span class="post-author">Zing </span>-
-                        <span class="post-date">
-                            10 hour
-                        </span>
-                        <p class="post-snippet">
-                            <span>
-                                Theo Washington Post, trình duyệt Google Chrome với 11.000 cookie của nó đang theo dõi
-                                người dùng và kiếm tiền từ việc này...
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </a>
-
-        <a class="news-link" target="_blank"
-            href="https://news.zing.vn/bill-gates-sai-lam-lon-nhat-la-de-thua-android-post959880.html">
-            <div class="story">
-                <img class="story_thumb" src="https://znews-photo.zadn.vn/w480/Uploaded/pqmcbzwv/2019_06_24/dims.jpg"
-                    alt="">
-                <div class="post">
-                    <h2 class="post-title">
-                        Bill Gates: 'Sai lầm lớn nhất là để thua Android'
-                    </h2>
-                    <div class="post_meta">
-                        <span class="post-author">Zing </span>-
-                        <span class="post-date">
-                            10 hour
-                        </span>
-                        <p class="post-snippet">
-                            <span>
-                                Sự lúng túng của Microsoft khi chuyển từ Windows Mobile sang Windows Phone đã tạo điều
-                                kiện cho Android lớn mạnh...
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </a>
+        <% }); %>
     </div>
 </body>
 
